@@ -1,7 +1,7 @@
 {
   "name": "yieldtask",
-  "version": "0.1.0",
-  "description": "Yield your tasks with generator functions",
+  "version": "0.1.2",
+  "description": "Yield your tasks in redux sagas",
   "main": "cjs/index.js",
   "browser": "dist/crossgear.js",
   "module": "es/index.js",
