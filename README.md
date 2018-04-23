@@ -1,19 +1,18 @@
-#  crossgear
+# runtask
 
-[![Coverage Status](https://coveralls.io/repos/github/rajatsharma305/crossgear/badge.svg?branch=master)](https://coveralls.io/github/rajatsharma305/crossgear?branch=master)
-[![Build Status](https://travis-ci.org/rajatsharma305/crossgear.svg?branch=master)](https://travis-ci.org/rajatsharma305/crossgear)
+Make your data.task monads yieldable in generators.
 
-Cross Target Node Module Builder, build node module with `CommonJs`, `UMD` and `es/import` Support
+### Example
+```javascript
+import runTask from 'runtask
 
-#### Features
+const testTask = x =>
+  Task.of(a)
+    .map(x => x + 10)
 
-Create `es/import`, `UMD` and `CommonJs` modules using ES6+.
+function* test () {
+  const a = yield runTask(testTask, 10)
+  console.log(a) // 20
+}
 
-#### Usage
-
-- `npm run build` or `yarn build` to Build modules for all three target.
-
-- Find CommonJs Build at **`cjs/index.js`**,
-Es Build at **`es/index.js`**, UMD Build at **`dist/crossgear.js`**.
-
-- `npm run release` or `yarn release` to release to npm registry.
+```
