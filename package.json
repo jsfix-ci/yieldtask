@@ -1,5 +1,5 @@
 {
-  "name": "runtask",
+  "name": "yieldtask",
   "version": "0.1.0",
   "description": "Yield your tasks with generator functions",
   "main": "cjs/index.js",

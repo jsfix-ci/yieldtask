@@ -1,4 +1,4 @@
-# runtask
+# yieldTask
 
 Make your data.task monads yieldable in generators.
 
@@ -12,7 +12,7 @@ const testTask = x =>
     .map(x => x + 10)
 
 function* test () {
-  const a = yield runTask(testTask, 10)
+  const a = yield yieldTask(testTask, 10)
   console.log(a) // 20
 }
 
